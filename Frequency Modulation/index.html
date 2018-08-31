@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src = "jquery-3.3.1.min.js" ></script>
+    <script src = "webpd-latest.js"></script>
+    <script src="p5/p5.js"></script>
+    <script src="p5/addons/p5.sound.js"></script>
+    <script src="p5/addons/p5.dom.js"></script>
+    <script src="main.js"></script>
+    <script  
+    var patch
+    $.get('osc.pd', function(patchStr) {
+      patch = Pd.loadPatch(patchStr)
+      Pd.start()
+    }) 
+    ></script>
+
+    <title>QWERTY Keyboard Assignment</title>
+
+</head>
+
+<body>
+
+    <h1>QWERTY Keyboard Assignment</h1>
+    <p>The next application lets you use your computer keyboard as a piano simulator taking as reference the next image. Try it out!</p>
+    <img src="qwerty_keyboard.png" align="center">
+    <h2>Use this slider to control de volume of the notes:</h2>
+    <p>The square on the right should show a white circle everytime you press a key:</p>
+
+</body>
+</html>
+
+
+
